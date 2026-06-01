@@ -99,7 +99,8 @@ export default async function handler(req, res) {
       startDate: eventData.start_dt,
       endDate: eventData.end_dt,
       people,
-      passcode: passcodeResult.passcode
+      passcode: passcodeResult.passcode,
+      team: info.team           // 🆕
     });
     
     // 準備 WhatsApp 送出內容
