@@ -57,7 +57,8 @@ export default async function handler(req, res) {
       startDate: eventData.start_dt,
       endDate: eventData.end_dt,
       people,
-      passcode: 'N/A'
+      passcode: 'N/A',
+      team: info.team           // 🆕
     });
     
     // 6. 顯示拒絕成功頁面
